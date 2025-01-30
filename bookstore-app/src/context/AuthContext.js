@@ -18,12 +18,12 @@ export const AuthProvider = ({ childern }) => {
         setUser(null);
         navigate("/login");
     };
-    return {
+    return (
         <AuthContext.Provider 
         value = {{ user, login, logout }}>
                      {childern}
         </AuthContext.Provider>
-    };
+    );
 
 };
 

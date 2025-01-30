@@ -13,11 +13,11 @@ export const BookProvider = ({ children }) => {
         .finally(() => setLoading(false));
     }, []);
 
-    return{
+    return(
         <BookContext.Provider value={{ books, loading }}>
         {childern}
         </BookContext.Provider>
-    };
+    );
 };
 
 export default BookContext;
